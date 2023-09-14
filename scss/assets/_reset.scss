@@ -1,0 +1,114 @@
+
+:root {
+    /*Colores*/
+    --color1: #000;
+    --color2: #111;
+    --color3: #333;
+    --color4: #555;
+    --color5: rgb(230, 230, 230);
+    --color6: #fff;
+    --color7: #0075FF;
+    --color8: #003C80;
+    --color9: #4DA0FF;
+    --color10: #265080;
+    --color11: #005FCC;
+    --color12: #93c4fc;
+    --color13: rgb(26,89,56);
+    --color14: rgb(191,43,43);
+    --color15: rgb(245, 245, 245);
+
+    /*tipografía*/
+    --titular1: 2em;
+    --titular2: 1.5em;
+    --titular3: 1.3em;
+    --titular4: 1.1em;
+    --parrafo: 1em;
+    --mini: 0.8em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $inter;
+}
+
+a,
+li {
+    list-style: none;
+    text-decoration: none;
+    color: var(--color1);
+    font-size: var(--parrafo);
+}
+
+h1 {
+    font-size: var(--titular1);
+}
+
+h2 {
+    font-size: var(--titular2);
+}
+
+h3 {
+    font-size: var(--titular3);
+}
+
+p {
+    font-size: var(--parrafo);
+}
+
+input, select {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    font-size: var(--parrafo);
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: var(--parrafo);
+    outline: none;
+    border-radius: 4px;
+}
+
+.btn-form {
+    padding: 10px 35px;
+    background-color: var(--color11);
+    color: var(--color6);
+    transition: all 0.3s;
+}
+
+.btn-form:hover {
+    background-color: var(--color8);
+}
+
+.btn-icon {
+    padding: 10px 15px;
+    color: var(--color1);
+    background-color: var(--color6);
+}
+
+.azul {
+    color: var(--color7);
+    font-weight: bold;
+}
+
+.azul2 {
+    color: var(--color8);
+    font-weight: bold;
+}
+
+.verde {
+    color: var(--color13);
+}
+
+.rojo {
+    color: var(--color14);
+}
+
+i {
+    color: var(--color1);
+}

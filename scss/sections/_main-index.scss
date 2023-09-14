@@ -1,0 +1,225 @@
+.main {
+    margin-top: 60px;
+}
+
+/*Portada*/
+
+.portada {  
+    color: var(--color6);
+    margin-top: 65px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    background-image: url(https://images.unsplash.com/photo-1468581264429-2548ef9eb732?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+    position: relative;
+    height: 65vh;
+}
+
+.capa__portada {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color1);
+    opacity: .5;
+}
+
+.portada__container {
+    position: absolute;
+    z-index: 50;
+}
+
+.portada__presentacion {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+}
+
+.portada__presentacion p {
+   font-size: var(--titular4);
+}
+
+.buscador__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada__buscador {
+    background-color: var(--color6);
+    width: max-content;
+    border: solid 1px var(--color5);
+    border-radius: 4px;
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 5px;
+    display: none;
+}
+
+.portada__buscador .buscar {
+    width: 100%;
+    padding: 10px;
+}
+
+@media (min-width: 480px) {
+    .portada__buscador {
+        width: 70%;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .portada {
+        height: 60vh;
+    }
+
+    .portada__buscador {
+        display: flex;
+    }
+}
+
+/*Galeria*/
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+/*Galeria - Filtros*/
+
+.galeria__filter {
+    padding: 10px;
+    border: solid 1px var(--color5);
+    width: 100%;
+    text-align: center;
+    max-width: 1400px;
+    margin-bottom: 10px;
+}
+
+/*Galeria -Imagenes*/
+
+.galeria__imagenes {
+    columns: 1;
+    column-gap: 1em;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.imagen__contenedor {
+    break-inside: avoid;
+    margin-bottom: 1em;
+    position: relative;
+    max-width: 400px;
+    transition: all 0.2s;
+}
+
+.imagen__img {
+    width: 100%;
+    display: block;
+    border-radius: 2px;
+}
+
+.imagen__capa {
+    display: none;
+}
+
+.imagen__pie {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px;
+}
+
+.imagen__pie .imagen__iconos .btn-icon {
+   padding: 5px 12px;
+   font-size: 1.1em;
+}
+
+@media (min-width: 481px) {
+
+    .galeria__imagenes {
+        columns: 2;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .galeria__imagenes {
+        columns: 3;
+    }
+
+    .imagen__contenedor:hover {
+        transform: scale(1.008);
+    }
+
+    .imagen__pie {
+        opacity: 0;
+        transition: 0.2s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .imagen__contenedor:hover .imagen__pie {
+        display: block;
+        opacity: 1;
+    }
+
+    .imagen__capa {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(var(--color6), var(--color1) 60%);
+        opacity: 0.5;
+        cursor: zoom-in;
+        z-index: 2;
+    }
+
+    .imagen__autor {
+        position: absolute;
+        bottom: 8px;
+        left: 8px;
+        color: var(--color6);
+        z-index: 3;
+    }
+
+    .imagen__pie .imagen__iconos {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        z-index: 3;
+    }
+
+    .imagen__pie .imagen__iconos .btn-icon {
+        font-size: 1em;
+     }
+
+    .imagen__pie .imagen__iconos .btn-icon i {
+        color: var(--color3);
+    }
+
+    .imagen__pie .imagen__iconos .btn-icon:hover i {
+        color: var(--color1);
+    }
+
+}

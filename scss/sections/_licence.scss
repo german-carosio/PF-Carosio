@@ -1,0 +1,55 @@
+/*===== LICENCE ===== */
+
+.licence {
+    padding: 20px;
+}
+
+.licence__titular {
+    margin: 30px auto 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+
+.licence__titular h2 {
+   font-size: var(--titular2);
+}
+
+.licence__titular h5 {
+    font-size: var(--parrafo);
+ }
+
+.licence__info {
+    margin: 0 auto 80px auto;
+}
+
+
+.licence__info div h5 {
+    margin-bottom: 1em;
+    font-size: var(--titular4);
+}
+
+.licence__info div ul li {
+    line-height: 1.8em;
+}
+
+.slide .carousel-item {
+   width: 800px;
+}
+
+.licence__preguntas {
+    margin: 0 auto 100px auto;
+}
+
+
+.licence__preguntas h2{
+    font-size: var(--titular3);
+}
+
+
+@media (min-width:600px) {
+
+    .licence__titular {
+        margin-top: 50px;
+    }
+}
