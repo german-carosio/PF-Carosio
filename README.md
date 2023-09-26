@@ -1,4 +1,4 @@
-# PreEntrega3-Carosio
+# Proyecto Final-Carosio
 Proyecto Desarrollo Web (Coderhouse)- German Carosio
 
 El proyecto tiene como fin simular un banco de imagenes y se va a alimentar a través de una API.
